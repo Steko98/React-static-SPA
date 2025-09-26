@@ -1,0 +1,44 @@
+.usluge{
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.usluga > img{
+    width: 100%;
+    min-height: 50vh;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+.usluga {
+    flex-basis: 20%;
+    position: relative;
+}
+
+.caption{
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    cursor: pointer;
+}
+
+.caption img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    filter: invert(1);
+    margin-bottom: 10px;
+    display: block;
+}
