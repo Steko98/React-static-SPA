@@ -1,0 +1,15 @@
+.naslov {
+    text-align: center;
+    color: #0A400C;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 70px 0px 0px;
+}
+
+.naslov h2 {
+    font-size: 32px;
+    color: #000F38;
+    margin-top: 5px;
+    text-transform: none;
+}

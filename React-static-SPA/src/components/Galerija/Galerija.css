@@ -1,0 +1,28 @@
+.galerija{
+    margin: 80px auto;
+    width: 90%;
+    text-align: center;
+}
+
+.slike{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.slike img{
+    width: 23%;
+    min-height: 55vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+/* 
+.pozadina{
+    background: #B1AB86;
+    width: 100%;
+    height: 100vh;
+    padding-left: 10%;
+    padding-right: 10%;
+} */
