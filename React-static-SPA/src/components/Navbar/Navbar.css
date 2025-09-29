@@ -27,8 +27,14 @@ nav ul li{
     color: #FEFAE0;
 }
 
+.social {
+    margin: 5px 20px;
+    color: #FEFAE0;
+}
+
 .dark-nav{
-    background: #0A400C;
+    /* background: #0A400C; */
+    background: #2C3930;
 }
 
 .nav-naslov {
@@ -55,4 +61,10 @@ nav ul li{
 nav > div {
     display: flex;
     align-items: center;
+}
+
+/* Media Query */
+
+@media (max-width: 1000px){
+    
 }
