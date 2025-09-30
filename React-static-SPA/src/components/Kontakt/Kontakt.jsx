@@ -67,7 +67,7 @@ const Kontakt = () => {
           <label>Ime i prezime</label>
           <input type="text" name="name" placeholder="Vaše ime" required />
 
-          <label></label>
+          <label>Email</label>
           <input
             type="email"
             name="email"

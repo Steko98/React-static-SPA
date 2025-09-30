@@ -1,50 +1,85 @@
-.usluge{
-    margin: 50px auto;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.usluge {
+  margin: 50px auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.usluga > img{
-    width: 100%;
-    min-height: 50vh;
-    border-radius: 10px;
-    object-fit: cover;
-    object-position: center;
-    display: block;
+.usluga > img {
+  width: 100%;
+  max-width: 250px;
+  height: 50vh;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 .usluga {
-    flex-basis: 20%;
-    position: relative;
+  flex-basis: 20%;
+  position: relative;
 }
 
-.caption{
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.caption {
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.caption img {
+  width: 50px;
+  height: 50px;
+  filter: invert(1);
+  margin-bottom: 10px;
+}
+
+/* .usluga:hover .caption {
+  opacity: 1;
+  padding-top: 0;
+} */
+
+/* Media Query */
+
+@media (max-width: 992px) {
+  .usluge {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .usluga {
+    flex-basis: 45%;
+    margin: 20px 10px;
+  }
+  .usluga > img{
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .usluge {
     flex-direction: column;
-    color: white;
-    cursor: pointer;
-    opacity: 0;
-    padding-top: 70%;
-    transition: 0.3s;
-}
-
-.caption img{
-    width: 50px;
-    height: 50px;
-    filter: invert(1);
-    margin-bottom: 10px;
-}
-
-.usluga:hover .caption{
-    opacity: 1;
-    padding-top: 0;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .usluga {
+    flex-basis: 98%;
+    width: 90%;
+    margin: 20px auto;
+  }
+    .usluga > img{
+    width: 100%;
+    max-width: none;
+    height: 30vh;
+  }
 }
