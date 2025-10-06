@@ -1,32 +1,51 @@
 .galerija{
     margin: 50px auto;
     width: 90%;
-    text-align: center;
 }
-
-.slike{
+.galerija-grid{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+.galerija-item{
+    padding: 0.5rem;
+    box-sizing: border-box;
 }
 
-.slike img{
-    width: 23%;
-    min-height: 55vh;
+.item-width-3{
+    width: 33.3333%;
+}
+.item-width-2{
+    width: 50%;
+}
+.slika-container{
+    display: block;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.slika-container:hover{
+    transform: translateY(-5px);
+}
+
+.galerija-slika{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    object-position: center;
-    border-radius: 10px;
+    aspect-ratio: 1/1 ;
+    display: block;
+    transition: 0.3 ease;
 }
 
 /* Media Query */
 
 @media (max-width: 768px){
-    .slike{
-        flex-wrap: wrap;
-    }
-    .slike img{
-        width: 48%;
-        margin-bottom: 25px;
+    .galerija-item,
+    .item-width-2,
+    .item-width-3 {
+        width: 100%;
     }
 }

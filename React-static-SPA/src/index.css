@@ -39,6 +39,10 @@ a {
   margin-left: 10px;
 }
 
+.btn-arrow{
+  margin-left: 10px;
+}
+
 .btn:hover {
   background-color: #a27b5c;
   transform: translate(-1.5px, -1.5px);

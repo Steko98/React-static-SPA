@@ -15,6 +15,7 @@
     font-size: 25px;
     display: flex;
     margin-bottom: 20px;
+    align-items: center;
 }
 
 .kontakt-col h3 img{
@@ -55,6 +56,11 @@
 .kontakt-col span{
     display: block;
     margin: 20px 0;
+}
+
+.contact-icons{
+    margin-right: 15px;
+    color: #3F4F44;
 }
 
 /* Media Query */

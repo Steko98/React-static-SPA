@@ -5,6 +5,11 @@ import email_icon from "../../assets/email.png";
 import call_icon from "../../assets/call.png";
 import address_icon from "../../assets/address.png";
 import send_icon from "../../assets/message.png";
+import { IoIosMail } from "react-icons/io";
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoLocationSharp } from "react-icons/io5";
+import { RiMailSendLine } from "react-icons/ri";
+import { IoIosSend } from "react-icons/io";
 
 const Kontakt = () => {
   const [result, setResult] = React.useState("");
@@ -36,7 +41,7 @@ const Kontakt = () => {
     <div className="kontakt">
       <div className="kontakt-col">
         <h3>
-          Javite nam se! <img src={mail_icon} alt="" />
+          Javite nam se! <RiMailSendLine size={32} style={{marginLeft: 15, color: '#3F4F44'}}/>
         </h3>
         <p>
           Svaki vrt i svaka zelena površina imaju svoju priču - mi smo ovdje da
@@ -48,15 +53,15 @@ const Kontakt = () => {
         </p>
         <ul>
           <li>
-            <img src={email_icon} alt="" />
+            <IoIosMail size={32} className="contact-icons"/>
             marekhortikultura@gmail.com
           </li>
           <li>
-            <img src={call_icon} alt="" />
+            <FaPhoneAlt size={28} className="contact-icons"/>
             +385915931582
           </li>
           <li>
-            <img src={address_icon} alt="" />
+            <IoLocationSharp size={32} className="contact-icons"/>
             Ulica Fikcijska 5 <br />
             Čepin 31431, Hrvatska
           </li>
@@ -87,7 +92,7 @@ const Kontakt = () => {
           ></textarea>
 
           <button className="btn dark-btn">
-            Pošalji <img src={send_icon} alt="" />
+            Pošalji <IoIosSend size={20} style={{marginLeft: 10}}/>
           </button>
         </form>
         <span>{result}</span>

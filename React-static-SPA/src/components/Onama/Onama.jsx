@@ -1,15 +1,18 @@
 import React from "react";
 import "./Onama.css";
 import about_slika from "../../assets/about_slika.jpg";
-import play_button from "../../assets/play-button.png";
 import { FaRegPlayCircle } from "react-icons/fa";
+import { FaPlay } from "react-icons/fa";
 
 const Onama = ({setPlayState}) => {
   return (
     <div className="about">
       <div className="about-left">
         <img src={about_slika} alt="" className="about-img" />
-        <FaRegPlayCircle size={56} className="play-button" onClick={()=>{
+        {/* <FaRegPlayCircle size={56} strokeWidth={15} stroke="#2C3930" className="play-button" onClick={()=>{
+          setPlayState(true)
+        }}/> */}
+        <FaPlay size={64} className="play-button" onClick={()=>{
           setPlayState(true)
         }}/>
       </div>
