@@ -1,10 +1,5 @@
 import React from "react";
 import "./Kontakt.css";
-import mail_icon from "../../assets/mail.png";
-import email_icon from "../../assets/email.png";
-import call_icon from "../../assets/call.png";
-import address_icon from "../../assets/address.png";
-import send_icon from "../../assets/message.png";
 import { IoIosMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";

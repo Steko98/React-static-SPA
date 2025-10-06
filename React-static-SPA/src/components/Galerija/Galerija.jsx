@@ -10,7 +10,6 @@ import galerija_7 from "../../assets/galerija_7.jpg";
 import galerija_8 from "../../assets/galerija_8.jpg";
 import galerija_9 from "../../assets/galerija_9.jpg";
 import galerija_10 from "../../assets/galerija_10.jpg";
-import { FaArrowRight } from "react-icons/fa";
 
 const slike = [
   galerija_1,

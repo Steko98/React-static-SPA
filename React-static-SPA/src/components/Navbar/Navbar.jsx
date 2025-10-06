@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import './Navbar.css'
-import logo from '../../assets/logo.svg'
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { Link } from 'react-scroll';
