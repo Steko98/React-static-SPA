@@ -14,15 +14,16 @@ nav {
   transition: 0.5s;
 }
 
-.logo {
-  width: 40px;
-  margin-right: 10px;
+.logo-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: all 0.3s ease-in-out;
 }
 
-.logo:hover {
-  transform: translate(-1.5px, -1.5px);
-  color: #a27b5c;
+.logo {
+  width: 40px;
+  margin-right: 10px;
 }
 
 nav ul li {
@@ -53,16 +54,18 @@ nav ul li:hover {
 }
 
 .nav-naslov {
-  color: #fefae0;
+  color: #fff;
   display: flex;
   align-items: baseline;
   gap: 8px;
   transition: all 0.3s ease-in-out;
+  padding-top: 4px;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
-.nav-naslov:hover {
+.logo-head:hover {
   transform: translate(-1.5px, -1.5px);
-  color: #a27b5c;
 }
 
 .nav-naslov h1 {
@@ -70,19 +73,14 @@ nav ul li:hover {
   margin: 0;
   line-height: 1;
 }
-
+/* 
 .nav-naslov p {
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 200;
   margin-left: 10px;
   line-height: 1;
-}
-
-nav > div {
-  display: flex;
-  align-items: center;
-}
+} */
 
 .menu-icon {
   display: none;
@@ -98,8 +96,8 @@ nav > div {
   }
 }
 
-.pulse-icon{
-    transition: all 0.3s ease-in-out;
+.pulse-icon {
+  transition: all 0.3s ease-in-out;
 }
 
 .pulse-icon:hover {

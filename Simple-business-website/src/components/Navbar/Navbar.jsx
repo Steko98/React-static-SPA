@@ -5,6 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 import { Link } from 'react-scroll';
 import { RiMenu5Line } from "react-icons/ri";
 import { TbPlant2 } from "react-icons/tb";
+import Logo from '../../assets/LOGO.png'
 
 const Navbar = () => {
 
@@ -23,12 +24,11 @@ const Navbar = () => {
 
   return (
     <nav className={`container ${sticky? 'dark-nav' : ''}`}>
-      <div>
-        {/* <Link to="hero" smooth={true} offset={0} duration={500}><img src={logo} alt="logo" className='logo'/></Link> */}
-        <Link to="hero" smooth={true} offset={0} duration={500}><TbPlant2 className='logo' size={40}/></Link>
+      <div className='logo-head'>
+        <Link to="hero" smooth={true} offset={0} duration={500}><img src={Logo} alt="logo" className='logo'/></Link>
         <div className='nav-naslov'>
-          <Link to="hero" smooth={true} offset={0} duration={500}><h1>Marek</h1></Link>
-          <Link to="hero" smooth={true} offset={0} duration={500}><p>obrt za hortikulturu</p></Link>     
+          <Link to="hero" smooth={true} offset={0} duration={500}><h1>Marek - obrt za hortikulturu</h1></Link>
+          {/* <Link to="hero" smooth={true} offset={0} duration={500}><p>obrt za hortikulturu</p></Link>      */}
         </div>  
       </div>
       <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
