@@ -2,6 +2,7 @@
 
 nav {
   width: 100%;
+  height: 72px;
   color: #dcd7c9;
   padding: 4px 0;
   position: fixed;
@@ -18,21 +19,43 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease-in-out;
 }
 
 .logo {
-  width: 40px;
   margin-right: 10px;
+}
+
+.nav-naslov {
+  color: #fefae0;
+  display: flex;
+  gap: 8px;
+  font-size: clamp(1rem, 0.75rem + 1.5vw, 1.5rem);
+}
+
+.nav-naslov h1 {
+  font-family: "Tangerine", cursive;
+  line-height: 1;
+  font-weight: 600;
+}
+.subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1rem, 0.75rem + 1.5vw, 1.5rem);
+  font-weight: 300;
 }
 
 nav ul li {
   display: inline-block;
   list-style: none;
   margin: 5px 20px;
-  font-size: 16px;
+  font-size: clamp(1rem, 1.2rem, 1.5rem);
   color: #fefae0;
-  vertical-align: middle;
+  vertical-align: center;
+  font-weight: 300;
+}
+
+.hide-mobile-menu {
+  display: flex;
+  align-items: center;
 }
 
 nav ul li:hover {
@@ -40,7 +63,6 @@ nav ul li:hover {
 }
 
 .nav-link {
-  display: inline-block;
   transition: all 0.3s ease-in-out;
 }
 
@@ -52,35 +74,6 @@ nav ul li:hover {
   background: #2c3930;
   border-bottom: 3px solid #a27b5c;
 }
-
-.nav-naslov {
-  color: #fff;
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  transition: all 0.3s ease-in-out;
-  padding-top: 4px;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.logo-head:hover {
-  transform: translate(-1.5px, -1.5px);
-}
-
-.nav-naslov h1 {
-  font-family: "Tangerine", cursive;
-  margin: 0;
-  line-height: 1;
-}
-/* 
-.nav-naslov p {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 200;
-  margin-left: 10px;
-  line-height: 1;
-} */
 
 .menu-icon {
   display: none;
@@ -94,6 +87,12 @@ nav ul li:hover {
   50% {
     transform: scale(1.2);
   }
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pulse-icon {
@@ -149,7 +148,7 @@ nav ul li:hover {
 }
 
 @media (max-width: 576px) {
-  .nav-naslov p {
+  .subtitle {
     display: none;
   }
 }
