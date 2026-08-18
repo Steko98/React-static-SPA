@@ -8,7 +8,6 @@ import Galerija from "./components/Galerija/Galerija";
 import Kontakt from "./components/Kontakt/Kontakt";
 import Footer from "./components/Footer/Footer";
 import Videoplayer from "./components/Videoplayer/Videoplayer";
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const App = () => {
 
